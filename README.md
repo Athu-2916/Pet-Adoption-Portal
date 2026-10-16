@@ -23,7 +23,7 @@ Pet Adoption Portal is a full-stack web application designed to simplify the pet
 
 ### Database
 
-* Oracle Database
+* MySQL Database
 
 ## Features
 
@@ -52,13 +52,13 @@ Frontend (React)
 ↓
 REST APIs (Spring Boot)
 ↓
-Oracle Database
+MySQL Database
 
 ## Installation
 
 ### Clone Repository
 
-git clone https://github.com/janhavimahjn/Pet-Adoption-Portal.git
+git clone https://github.com/Athu-2916/Pet-Adoption-Portal.git
 
 ### Frontend Setup
 
@@ -76,7 +76,7 @@ mvn spring-boot:run
 
 ### Database Configuration
 
-Configure Oracle Database credentials in:
+Configure MySQL Database credentials in:
 
 src/main/resources/application.properties
 
@@ -102,8 +102,8 @@ src/main/resources/application.properties
 
 ## Author
 
-Janhavi Mahajan
+Atharva Jadhav
 
 Bachelor of Engineering (Computer Engineering)
 
-Final Year Project
+

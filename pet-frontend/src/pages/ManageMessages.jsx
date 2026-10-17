@@ -24,7 +24,7 @@ function ManageMessages() {
 
             const response =
                 await axios.get(
-                    "http://localhost:8080/contact"
+                    "https://pet-adoption-portal-production.up.railway.app/contact"
                 );
 
             setMessages(
@@ -48,7 +48,7 @@ function ManageMessages() {
             try {
 
                 await axios.delete(
-                    `http://localhost:8080/contact/${id}`
+                    `https://pet-adoption-portal-production.up.railway.app/contact/${id}`
                 );
 
                 fetchMessages();

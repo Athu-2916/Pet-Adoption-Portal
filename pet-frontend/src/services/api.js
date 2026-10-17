@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const BASE_URL = 'http://localhost:8080/pets';
+const BASE_URL = 'https://pet-adoption-portal-production.up.railway.app/pets';
 
 export const getAllPets = () => {
     return axios.get(BASE_URL);

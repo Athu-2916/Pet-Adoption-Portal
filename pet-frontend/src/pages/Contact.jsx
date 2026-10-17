@@ -28,7 +28,7 @@ function Contact() {
         try {
 
             await axios.post(
-                "http://localhost:8080/contact",
+                "https://pet-adoption-portal-production.up.railway.app/contact",
                 form
             );
 

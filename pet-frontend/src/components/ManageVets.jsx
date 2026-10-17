@@ -18,7 +18,7 @@ function ManageVets() {
         try {
 
             const response = await axios.get(
-                "http://localhost:8080/vets"
+                "https://pet-adoption-portal-production.up.railway.app/vets"
             );
 
             setVets(response.data);
@@ -49,7 +49,7 @@ function ManageVets() {
         try {
 
             await axios.delete(
-                `http://localhost:8080/vets/${id}`
+                `https://pet-adoption-portal-production.up.railway.app/vets/${id}`
             );
 
             alert("Veterinarian deleted successfully.");

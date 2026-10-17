@@ -57,7 +57,7 @@ function MyAdoptions() {
 
             const response =
                 await axios.get(
-                    `http://localhost:8080/adoptions/user/${userId}`
+                    `https://pet-adoption-portal-production.up.railway.app/adoptions/user/${userId}`
                 );
 
 

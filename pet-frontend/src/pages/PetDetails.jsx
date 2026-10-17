@@ -30,7 +30,7 @@ function PetDetails() {
 
             const response =
                 await axios.get(
-                    `http://localhost:8080/pets/${id}`
+                    `https://pet-adoption-portal-production.up.railway.app/pets/${id}`
                 );
 
             setPet(

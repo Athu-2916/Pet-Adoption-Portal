@@ -17,7 +17,7 @@ function ManageUsers() {
         try {
 
             const response = await axios.get(
-                'http://localhost:8080/users'
+                'https://pet-adoption-portal-production.up.railway.app/users'
             );
 
             setUsers(response.data);
@@ -33,7 +33,7 @@ function ManageUsers() {
         try {
 
             await axios.delete(
-                `http://localhost:8080/users/${id}`
+                `https://pet-adoption-portal-production.up.railway.app/users/${id}`
             );
 
             fetchUsers();
@@ -49,7 +49,7 @@ function ManageUsers() {
         try {
 
             await axios.put(
-                `http://localhost:8080/users/${id}`,
+                `https://pet-adoption-portal-production.up.railway.app/users/${id}`,
                 {
                     role: role
                 }

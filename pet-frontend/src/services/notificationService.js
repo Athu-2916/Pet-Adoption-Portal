@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API =
-    "http://localhost:8080/notifications";
+    "https://pet-adoption-portal-production.up.railway.app/notifications";
 
 
 export const getNotifications = (userId) => {

@@ -33,7 +33,7 @@ function PetCard({ pet, onRemove }) {
             try {
                 const statusResponse =
                     await axios.get(
-                       `http://localhost:8080/adoptions/status/${userId}/${pet.id}`
+                       `https://pet-adoption-portal-production.up.railway.app/adoptions/status/${userId}/${pet.id}`
                     );
                 setAdoptionStatus(
                     statusResponse.data
@@ -79,7 +79,7 @@ function PetCard({ pet, onRemove }) {
 
             const response =
                 await axios.get(
-                    `http://localhost:8080/adoptions/status/${userId}/${pet.id}`
+                    `https://pet-adoption-portal-production.up.railway.app/adoptions/status/${userId}/${pet.id}`
                 );
 
             setAdoptionStatus(
@@ -144,7 +144,7 @@ function PetCard({ pet, onRemove }) {
         try {
 
             await axios.post(
-                'http://localhost:8080/adoptions',
+                'https://pet-adoption-portal-production.up.railway.app/adoptions',
                 {
                     userId: Number(userId),
                     petId: petId

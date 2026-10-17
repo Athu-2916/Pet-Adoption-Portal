@@ -67,7 +67,7 @@ function MyVetAppointments() {
 
             const response =
                 await axios.get(
-                    `http://localhost:8080/vet-bookings/user/${userId}`
+                    `https://pet-adoption-portal-production.up.railway.app/vet-bookings/user/${userId}`
                 );
 
 

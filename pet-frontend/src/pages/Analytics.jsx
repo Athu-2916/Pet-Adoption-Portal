@@ -27,7 +27,7 @@ function Analytics() {
   const fetchPets = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:8080/pets"
+        "https://pet-adoption-portal-production.up.railway.app/pets"
       );
 
       setPets(response.data);

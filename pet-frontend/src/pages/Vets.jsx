@@ -18,7 +18,7 @@ function Vets() {
         try {
 
             const response = await axios.get(
-                "http://localhost:8080/vets"
+                "https://pet-adoption-portal-production.up.railway.app/vets"
             );
 
             setVets(response.data);

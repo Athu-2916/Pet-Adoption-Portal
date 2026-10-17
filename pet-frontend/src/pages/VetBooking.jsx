@@ -75,7 +75,7 @@ function VetBooking() {
             };
 
             await axios.post(
-                "http://localhost:8080/vet-bookings",
+                "https://pet-adoption-portal-production.up.railway.app/vet-bookings",
                 booking
             );
 

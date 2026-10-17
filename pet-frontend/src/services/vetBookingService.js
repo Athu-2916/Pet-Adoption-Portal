@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API = "http://localhost:8080/vet-bookings";
+const API = "https://pet-adoption-portal-production.up.railway.app/vet-bookings";
 
 export const bookVetAppointment = (booking) => {
     return axios.post(API, booking);

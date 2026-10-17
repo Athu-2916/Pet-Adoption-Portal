@@ -24,7 +24,7 @@ function Login() {
         try {
 
             const response = await axios.post(
-                "http://localhost:8080/auth/login",
+                "https://pet-adoption-portal-production.up.railway.app/auth/login",
                 {
                     email: email.trim(),
                     password: password

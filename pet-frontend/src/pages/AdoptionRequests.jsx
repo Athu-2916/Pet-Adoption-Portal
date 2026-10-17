@@ -43,7 +43,7 @@ function AdoptionRequests() {
 
             const response =
                 await axios.get(
-                    'http://localhost:8080/adoptions'
+                    'https://pet-adoption-portal-production.up.railway.app/adoptions'
                 );
 
 
@@ -84,7 +84,7 @@ function AdoptionRequests() {
         try {
 
             await axios.put(
-                `http://localhost:8080/adoptions/${id}`,
+                `https://pet-adoption-portal-production.up.railway.app/adoptions/${id}`,
                 {
                     status: status
                 }

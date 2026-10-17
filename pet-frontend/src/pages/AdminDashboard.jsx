@@ -44,7 +44,7 @@ function AdminDashboard() {
 
                 const petsResponse =
                     await axios.get(
-                        "http://localhost:8080/pets"
+                        "https://pet-adoption-portal-production.up.railway.app/pets"
                     );
 
                 setPets(
@@ -54,7 +54,7 @@ function AdminDashboard() {
 
                 const usersResponse =
                     await axios.get(
-                        "http://localhost:8080/users"
+                        "https://pet-adoption-portal-production.up.railway.app/users"
                     );
 
                 setUsers(

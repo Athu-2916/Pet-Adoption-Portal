@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'http://localhost:8080/users';
+const API_URL = 'https://pet-adoption-portal-production.up.railway.app/users';
 
 export const getUser = (id) => {
     return axios.get( `${API_URL}/${id}` );
@@ -25,7 +25,7 @@ export const uploadPhoto = (userId, file) => {
     formData.append("file", file);
 
     return axios.post(
-        `http://localhost:8080/users/upload-photo/${userId}`,
+        `https://pet-adoption-portal-production.up.railway.app/users/upload-photo/${userId}`,
         formData
         
     );

@@ -171,7 +171,7 @@ function Profile() {
                         src={
                             user.profilePhoto
                                 ?
-                                `http://localhost:8080/uploads/profile/${user.profilePhoto}`
+                                `https://pet-adoption-portal-production.up.railway.app/uploads/profile/${user.profilePhoto}`
                                 :
                                 'https://cdn-icons-png.flaticon.com/512/149/149071.png'
                         }

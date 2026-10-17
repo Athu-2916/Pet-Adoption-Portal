@@ -45,7 +45,7 @@ function SearchResults() {
 
             const response =
             await axios.get(
-                `http://localhost:8080/pets/search?keyword=${keyword}`
+                `https://pet-adoption-portal-production.up.railway.app/pets/search?keyword=${keyword}`
             );
 
             setPets(

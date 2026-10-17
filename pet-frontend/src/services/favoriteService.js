@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const API_URL =
-    'http://localhost:8080/favorites';
+    'https://pet-adoption-portal-production.up.railway.app/favorites';
 
 
 // =========================================

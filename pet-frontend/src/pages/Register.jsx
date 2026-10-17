@@ -32,7 +32,7 @@ function Register() {
         try {
 
             const response = await axios.post(
-                'http://localhost:8080/auth/register',
+                'https://pet-adoption-portal-production.up.railway.app/auth/register',
                 user
             );
 

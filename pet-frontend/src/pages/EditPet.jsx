@@ -50,7 +50,7 @@ function EditPet() {
 
             const response =
                 await axios.get(
-                    `http://localhost:8080/pets/${id}`
+                    `https://pet-adoption-portal-production.up.railway.app/pets/${id}`
                 );
 
             setPet({
@@ -91,7 +91,7 @@ function EditPet() {
         try {
 
             await axios.put(
-                `http://localhost:8080/pets/${id}`,
+                `https://pet-adoption-portal-production.up.railway.app/pets/${id}`,
                 pet
             );
 

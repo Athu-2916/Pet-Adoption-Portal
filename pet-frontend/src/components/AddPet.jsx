@@ -41,7 +41,7 @@ function AddPet() {
             const token = localStorage.getItem('token');
 
             await axios.post(
-                'http://localhost:8080/pets',
+                'https://pet-adoption-portal-production.up.railway.app/pets',
                 pet,
                 {
                     headers: {

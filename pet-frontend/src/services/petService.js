@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'http://localhost:8080/pets';
+const API_URL = 'https://pet-adoption-portal-production.up.railway.app/pets';
 
 export const getAllPets = () => {
 

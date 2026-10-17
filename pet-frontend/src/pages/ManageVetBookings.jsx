@@ -34,12 +34,12 @@ function ManageVetBookings() {
 
             const bookingsResponse =
                 await axios.get(
-                    "http://localhost:8080/vet-bookings"
+                    "https://pet-adoption-portal-production.up.railway.app/vet-bookings"
                 );
 
             const vetsResponse =
                 await axios.get(
-                    "http://localhost:8080/vets"
+                    "https://pet-adoption-portal-production.up.railway.app/vets"
                 );
 
             setBookings(
@@ -167,7 +167,7 @@ function ManageVetBookings() {
 
             await axios.put(
 
-                `http://localhost:8080/vet-bookings/${id}/approve`,
+                `https://pet-adoption-portal-production.up.railway.app/vet-bookings/${id}/approve`,
 
                 {
                     appointmentDate:
@@ -226,7 +226,7 @@ function ManageVetBookings() {
         try {
 
             await axios.put(
-                `http://localhost:8080/vet-bookings/${id}/reject`
+                `https://pet-adoption-portal-production.up.railway.app/vet-bookings/${id}/reject`
             );
 
 

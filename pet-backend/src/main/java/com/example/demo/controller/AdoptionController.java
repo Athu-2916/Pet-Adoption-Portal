@@ -18,7 +18,10 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/adoptions")
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = {
+		"http://localhost:3000", 
+		"https://pet-adoption-portal-at-ecru.vercel.app"
+		})
 public class AdoptionController {
 
     @Autowired

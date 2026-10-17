@@ -1,6 +1,7 @@
 package com.example.demo.controller;
 
 import com.example.demo.entity.VetBooking;
+
 import com.example.demo.repository.VetBookingRepository;
 import com.example.demo.service.NotificationService;
 
@@ -14,7 +15,7 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/vet-bookings")
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = {"http://localhost:3000", "https://pet-adoption-portal-at-ecru.vercel.app"})
 public class VetBookingController {
 
         private final VetBookingRepository repository;

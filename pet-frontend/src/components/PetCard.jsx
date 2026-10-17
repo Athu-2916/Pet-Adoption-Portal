@@ -64,66 +64,66 @@ function PetCard({ pet, onRemove }) {
         fetchData();
     }, [pet.id]);
 
-    const checkStatus = async () => {
+    // const checkStatus = async () => {
 
-        const userId =
-            localStorage.getItem('userId');
+    //     const userId =
+    //         localStorage.getItem('userId');
 
-        if (!userId) {
+    //     if (!userId) {
 
-            setAdoptionStatus('NONE');
-            return;
-        }
+    //         setAdoptionStatus('NONE');
+    //         return;
+    //     }
 
-        try {
+    //     try {
 
-            const response =
-                await axios.get(
-                    `https://pet-adoption-portal-production.up.railway.app/adoptions/status/${userId}/${pet.id}`
-                );
+    //         const response =
+    //             await axios.get(
+    //                 `https://pet-adoption-portal-production.up.railway.app/adoptions/status/${userId}/${pet.id}`
+    //             );
 
-            setAdoptionStatus(
-                response.data
-            );
-        } catch (error) {
-            console.log(error);
-            setAdoptionStatus(
-                'NONE'
-            );
-        }
-    };
+    //         setAdoptionStatus(
+    //             response.data
+    //         );
+    //     } catch (error) {
+    //         console.log(error);
+    //         setAdoptionStatus(
+    //             'NONE'
+    //         );
+    //     }
+    // };
 
-    const checkFavorite = async () => {
+    // const checkFavorite = async () => {
 
-        const userId =
-            localStorage.getItem('userId');
-        if (!userId) {
-            setIsFavorite(false);
-            return;
-        }
+    //     const userId =
+    //         localStorage.getItem('userId');
+    //     if (!userId) {
+    //         setIsFavorite(false);
+    //         return;
+    //     }
 
-        try {
-            const response =
-                await getFavoriteId(
-                    userId,
-                    pet.id
-                );
+    //     try {
+    //         const response =
+    //             await getFavoriteId(
+    //                 userId,
+    //                 pet.id
+    //             );
 
-            if (response.data) {
-                setIsFavorite(true);
-                setFavoriteId(
-                    response.data
-                );
+    //         if (response.data) {
+    //             setIsFavorite(true);
+    //             setFavoriteId(
+    //                 response.data
+    //             );
 
-            } else {
-                setIsFavorite(false);
-            }
+    //         } else {
+    //             setIsFavorite(false);
+    //         }
 
-        } catch (error) {
-            console.log(error);
-            setIsFavorite(false);
-        }
-    };
+    //     } catch (error) {
+    //         console.log(error);
+    //         setIsFavorite(false);
+    //     }
+    // };
 
     const handleAdopt = async (petId) => {
 

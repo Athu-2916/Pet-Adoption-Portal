@@ -1,4 +1,5 @@
 import React, {
+    useCallback,
     useEffect,
     useState
 } from "react";
@@ -47,7 +48,7 @@ function NotificationBell() {
     // LOAD NOTIFICATIONS
     // =========================================
 
-    const loadNotifications = async () => {
+    const loadNotifications = useCallback(async () => {
 
         const userId = getUserId();
 
@@ -95,7 +96,7 @@ function NotificationBell() {
 
             setLoading(false);
         }
-    };
+    }, []);
 
 
     // =========================================
@@ -106,7 +107,7 @@ function NotificationBell() {
 
         loadNotifications();
 
-    }, []);
+    }, [loadNotifications]);
 
 
     // =========================================

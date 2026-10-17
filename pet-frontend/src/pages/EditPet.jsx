@@ -39,10 +39,6 @@ function EditPet() {
 
     useEffect(() => {
 
-        loadPet();
-
-    }, []);
-
     const loadPet =
     async () => {
 
@@ -71,7 +67,11 @@ function EditPet() {
 
             console.log(error);
         }
+
     };
+        loadPet();
+
+    }, [id]);
 
     const handleChange =
     (e) => {

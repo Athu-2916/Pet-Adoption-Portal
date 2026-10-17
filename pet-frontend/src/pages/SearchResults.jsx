@@ -33,30 +33,28 @@ function SearchResults() {
         params.get("keyword") || "";
 
     useEffect(() => {
+        const loadPets =
+            async () => {
 
+                try {
+
+                    const response =
+                    await axios.get(
+                        `https://pet-adoption-portal-production.up.railway.app/pets/search?keyword=${keyword}`
+                    );
+
+                setPets(
+                    response.data
+                );
+
+            } catch(error){
+
+                console.log(error);
+            }
+        };
         loadPets();
 
-    }, []);
-
-    const loadPets =
-    async () => {
-
-        try {
-
-            const response =
-            await axios.get(
-                `https://pet-adoption-portal-production.up.railway.app/pets/search?keyword=${keyword}`
-            );
-
-            setPets(
-                response.data
-            );
-
-        } catch(error){
-
-            console.log(error);
-        }
-    };
+    }, [keyword]);
 
     return (
 

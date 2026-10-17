@@ -3,8 +3,6 @@ import React, {
     useState
 } from "react";
 
-import axios from "axios";
-
 import {
     useParams
 } from "react-router-dom";
@@ -19,29 +17,21 @@ function PetDetails() {
         useState(null);
 
     useEffect(() => {
-
-        loadPet();
-
-    }, []);
-
-    const loadPet = async () => {
-
-        try {
-
-            const response =
-                await axios.get(
-                    `https://pet-adoption-portal-production.up.railway.app/pets/${id}`
+        const loadPet = async () => {
+            try {
+                const response = await fetch(
+                   `https://pet-adoption-portal-production.up.railway.app/pets/${id}`
                 );
 
-            setPet(
-                response.data
-            );
+                const data = await response.json();
+                setPet(data);
+            } catch (error) {
+                console.error(error);
+            }
+        };
 
-        } catch (error) {
-
-            console.log(error);
-        }
-    };
+        loadPet();
+    }, [id]);
 
     if (!pet) {
 

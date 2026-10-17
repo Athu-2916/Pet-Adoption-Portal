@@ -9,7 +9,7 @@ import { FaArrowRight } from "react-icons/fa";
 
 function Home() {
 
-    const [pets, setPets] = useState([]);
+    const [, setPets] = useState([]);
     const [filteredPets, setFilteredPets] = useState([]);
     const [loading, setLoading] = useState(true);
     const [keyword, setKeyword] = useState("");
